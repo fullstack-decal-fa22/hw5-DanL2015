@@ -1,3 +1,4 @@
+import Comments from './Comments'
 // ___________________ import statement
 
 const Post = ({ title, body, comments, id }) => {
@@ -7,7 +8,7 @@ const Post = ({ title, body, comments, id }) => {
       {title}
     </h3>
     <p>{body}</p>
-    <Comments _________ _________ />
+    <Comments postId={id} comments={comments} />
   </div>
 }
 
